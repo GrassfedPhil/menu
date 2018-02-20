@@ -1,7 +1,10 @@
+import coke from "../images/coke.jpg";
+
+
 export default {
 
     drinks: {
-        1: {itemName: "Coke", description: "Refreshing Coke"},
+        1: {itemName: "Coke", description: "Refreshing Coke", image: coke},
         2: {itemName: "Pepsi", description: "Tasty Pepsi"}
     },
     food: {
