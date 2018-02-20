@@ -1,13 +1,12 @@
 export default {
 
     drinks: {
-        1: {text: "coke"},
-        2: {text: "stuff"}
+        1: {itemName: "Coke", description: "Refreshing Coke"},
+        2: {itemName: "Pepsi", description: "Tasty Pepsi"}
     },
     food: {
-        id: 2,
-        name: "food",
-        items: []
+        1: {itemName: "Cheeseburger", description: "Tasty Cheeseburger"},
+        2: {itemName: "Fries", description: "Tasty Fries"}
     }
 
 };

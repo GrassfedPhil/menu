@@ -4,6 +4,7 @@ import './App.css';
 import {Route, Switch} from "react-router-dom";
 import Home from "./components/home";
 import Item from "./components/item";
+import MenuItem from "./components/menuItem";
 
 class App extends Component {
 
@@ -20,6 +21,7 @@ class App extends Component {
           <Switch>
               <Route exact path="/" component={Home}/>
               <Route path="/category/:category" component={Item}/>
+              <Route path="/:category/:id" component={MenuItem}/>
           </Switch>
       </div>
     );

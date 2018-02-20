@@ -12,7 +12,7 @@ const Item = ({match}) => {
             let key = keys[i];
             let link = (
                 <div>
-                    <Link to={`/${category}/${key}`} key={key}>{allTheDatum[key].text}</Link>
+                    <Link to={`/${category}/${key}`} key={key}>{allTheDatum[key].itemName}</Link>
                 </div>
             );
             itemLinks.push(link);
