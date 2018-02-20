@@ -5,6 +5,7 @@ import {Route, Switch} from "react-router-dom";
 import Home from "./components/home";
 import CategoryGroup from "./components/categoryGroup";
 import MenuItem from "./components/menuItem";
+import NoMatch from "./components/noMatch";
 
 let styles = {
     image: {
@@ -24,6 +25,7 @@ class App extends Component {
                     <Route exact path="/" component={Home}/>
                     <Route path="/category/:category" component={CategoryGroup}/>
                     <Route path="/:category/:id" component={MenuItem}/>
+                    <Route component={NoMatch}/>
                 </Switch>
             </div>
         );
