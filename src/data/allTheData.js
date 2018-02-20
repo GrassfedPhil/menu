@@ -1,15 +1,25 @@
 import coke from "../images/coke.jpg";
+import pepsi from "../images/pepsi.jpg";
+import drinkImage from "../images/coke.jpg";
+import cheeseburger from "../images/cheeseburger.png";
+import fries from "../images/fries.png";
 
 
 export default {
 
     drinks: {
-        1: {itemName: "Coke", description: "Refreshing Coke", image: coke},
-        2: {itemName: "Pepsi", description: "Tasty Pepsi"}
+        items: {
+            1: {itemName: "Coke", description: "Refreshing Coke", image: coke},
+            2: {itemName: "Pepsi", description: "Tasty Pepsi", image: pepsi}
+        },
+        image: drinkImage
     },
     food: {
-        1: {itemName: "Cheeseburger", description: "Tasty Cheeseburger"},
-        2: {itemName: "Fries", description: "Tasty Fries"}
+        items: {
+            1: {itemName: "Cheeseburger", description: "Tasty Cheeseburger", image: cheeseburger},
+            2: {itemName: "Fries", description: "Tasty Fries", image: fries}
+        },
+        image: cheeseburger
     }
 
 };

@@ -10,7 +10,7 @@ let styles = {
 const MenuItem = ({match}) => {
     let category = match.params.category;
     let itemId = match.params.id;
-    let menuItem = allTheData[category][itemId];
+    let menuItem = allTheData[category].items[itemId];
     return (
         <div>
             <img style={styles.image} src={menuItem.image} alt={""}/>
