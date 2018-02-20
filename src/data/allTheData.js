@@ -7,14 +7,14 @@ import fries from "../images/fries.png";
 
 export default {
 
-    drinks: {
+    Drinks: {
         items: {
             1: {itemName: "Coke", description: "Refreshing Coke", image: coke},
             2: {itemName: "Pepsi", description: "Tasty Pepsi", image: pepsi}
         },
         image: drinkImage
     },
-    food: {
+    Food: {
         items: {
             1: {itemName: "Cheeseburger", description: "Tasty Cheeseburger", image: cheeseburger},
             2: {itemName: "Fries", description: "Tasty Fries", image: fries}

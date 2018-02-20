@@ -19,8 +19,8 @@ const CategoryGroup = ({match}) => {
             let key = keys[i];
             let item = categoryItems[key];
             let link = (
-                <div>
-                    <Link to={`/${category}/${key}`} key={key}>
+                <div key={key}>
+                    <Link to={`/${category}/${key}`}>
                         <img src={item.image} alt={""}/>
                         <div>{item.itemName}</div>
                     </Link>
