@@ -2,7 +2,7 @@ import React from "react";
 import allTheData from "../data/allTheData";
 import {Link} from "react-router-dom";
 
-const Item = ({match}) => {
+const CategoryGroup = ({match}) => {
     function renderItems() {
         let category = match.params.category;
         let allTheDatum = allTheData[category];
@@ -27,4 +27,4 @@ const Item = ({match}) => {
     )
 };
 
-export default Item;
+export default CategoryGroup;

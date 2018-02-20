@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import {Route, Switch} from "react-router-dom";
 import Home from "./components/home";
-import Item from "./components/item";
+import CategoryGroup from "./components/categoryGroup";
 import MenuItem from "./components/menuItem";
 
 class App extends Component {
@@ -20,7 +20,7 @@ class App extends Component {
         </p>
           <Switch>
               <Route exact path="/" component={Home}/>
-              <Route path="/category/:category" component={Item}/>
+              <Route path="/category/:category" component={CategoryGroup}/>
               <Route path="/:category/:id" component={MenuItem}/>
           </Switch>
       </div>
