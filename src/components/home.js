@@ -5,8 +5,9 @@ import allTheData from "../data/allTheData";
 const Home = () => {
 
     function renderCategories() {
-        return allTheData.categories.map((item) => {
-            return <Category name={`${item.name}`} link={`/category/${item.name}`} key={item.id}/>
+        let categories = Object.keys(allTheData);
+        return categories.map((name) => {
+            return <Category name={`${name}`} link={`/category/${name}`}/>
         });
     }
 
